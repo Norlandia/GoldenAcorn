@@ -10,3 +10,9 @@ const Button = (props) => {
 }
  
 export default Button;
+
+Button.propTypes = {
+  name: PropTypes.string,
+}
+
+// Button should get a function and a string via properties
