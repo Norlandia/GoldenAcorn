@@ -9,20 +9,27 @@ class GoldenAcornApp extends Component {
       counter: 0,
     };
   }
+  
   increase() {
-
+    this.setState({
+      counter: this.state.counter + 1,
+    })
   }
 
   decrease() {
-
+    if (this.state.counter !== 0) {
+      this.setState({
+        counter: this.state.counter - 1,
+      })
+    }
   }
 
   render() {
     return (
       <div>
-        <Button name="Buy one" />
+        <Button name="Buy one" onClick={() => this.increase()}/>
         <Display><h2>{this.state.counter}</h2></Display>
-        <Button name="Eat one" />
+        <Button name="Eat one" onClick={() => this.decrease()}/>
       </div>
     );
   }
