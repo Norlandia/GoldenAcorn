@@ -1,4 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import GoldenAcornApp from './containers/GoldenAcornApp';
 
-ReactDOM.render(<h1>Hello, Norlandia!!!</h1>, document.getElementById('root'));
+ReactDOM.render(<GoldenAcornApp />, document.getElementById('root'));
