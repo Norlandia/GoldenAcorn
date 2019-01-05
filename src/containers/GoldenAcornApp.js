@@ -29,8 +29,6 @@ class GoldenAcornApp extends Component {
   }
 
   handleKeyUp(event) {
-    console.log(event);
-    
     if (event.keyCode === 38) {
       this.setState({
         counter: this.state.counter + 1,
@@ -44,8 +42,6 @@ class GoldenAcornApp extends Component {
 
   catchDocument() {
     const myDocument = document.querySelector('body');
-    console.log(myDocument);
-    
     myDocument.addEventListener('keyup', (event) => this.handleKeyUp(event))
   }
 
