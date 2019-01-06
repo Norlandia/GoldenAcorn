@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
 import { acornReducer } from './acorn';
 
-export default (rootReducer = combineReducers({
+const rootReducer = combineReducers({
   acornReducer,
-}));
+});
+
+export default rootReducer;

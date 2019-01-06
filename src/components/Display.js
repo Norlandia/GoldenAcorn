@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Display = (props) => {
   return ( 
     <div>
-      {props.children}
+      <h2>{props.counter}</h2>
     </div>
    );
 }
