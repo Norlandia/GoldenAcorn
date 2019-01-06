@@ -12,6 +12,7 @@ export const acornReducer = (state = initialState, action) => {
         counter: state.counter + action.amount,
       };
     }
+    
     case EAT_ACORN: {
       return {
         ...state,
