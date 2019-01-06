@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Display from '../components/Display';
 import Button from '../components/Button';
 import { buy, eat } from '../actions/acornAction';
-import { connect } from 'react-redux';
 
 const GoldenAcornApp = ({ count, buy, eat }) => {
 

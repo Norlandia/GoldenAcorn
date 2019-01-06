@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
-import GoldenAcornApp from './containers/GoldenAcornApp';
+import AcornRouter from './components/AcornRouter';
 
 ReactDOM.render(
   <Provider store={store}>
-    <GoldenAcornApp />
+    <AcornRouter />
   </Provider>,
   document.getElementById('root')
 );
